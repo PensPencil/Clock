@@ -1,7 +1,7 @@
 html {
   background: #282828;
   text-align: center;
-  font-size: 10px;
+ 
 }
 
 body {
@@ -16,6 +16,7 @@ body {
 .clock{
   width: 30rem;
   height: 30rem;
+  padding:1rem;
   position: relative;
   box-shadow :-4px -4px 10px #282828,
     inset 4px 4px 10px #000000,
@@ -31,6 +32,7 @@ body {
   width:0.5rem;
   margin :1rem 15rem;
   background-color:#0862AB;
+  border-radius:40%;
 }
 .vert{
   transform:rotate(90deg);
@@ -42,4 +44,33 @@ body {
   border-radius:50%;
   margin :2.5rem 2.75rem;
   background-color:#282828;
+  display: flex;
+  justify-content: center;
+}
+.hand{
+  position:absolute;
+  border-radius:60%;
+  right: 50%;
+  top:50%;
+  transform-origin:100% 100%;
+}
+.second{
+  height:12rem;
+  width:0.1rem;
+  background-color:#6A97C0;
+  top:1.3rem;
+}
+.minute{
+  height:11rem;
+  width:0.3rem;
+  background-color:#BCC9D5;
+  top:2.6rem;
+}
+.hour{
+  height:10rem;
+  width:0.5rem;
+  top:3.65rem;
+  left:11.9rem;
+  /*BCC9D5*/
+  background-color:#BCC9D5;
 }
